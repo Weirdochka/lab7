@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Хазиахметов</title>
+    </head>
+    <body>
+        <ul id="link-list">
+            <li><a href="https://i.pinimg.com/564x/61/66/92/616692db38aedf093bdd788741853d00.jpg">Кот показывает язык</a></li>
+            <li><a href="https://i.pinimg.com/originals/29/58/14/295814791cf3352ef7e6081eeac2ade1.gif">Механизм(гифка)</a></li>
+            <li><a href="https://sun9-48.userapi.com/impg/0xj7UCKsBbKS3hmVs8UsDVwkmikAVZMBvJ2mBA/Mmsh5Af3auI.jpg?size=1280x1280&quality=95&sign=f52e0c5fcb11cc058860d5e05a9031dc&type=album">Красивый дом майнкрафт</a></li>
+            <li><a href="C:\Users\ferse\OneDrive\Рабочий стол\Минкин\1.jpg">мем</a></li>
+            <li><a href="https://sun9-4.userapi.com/impg/YIJpyYv8QM_aqVKQX8BY-S2lsA2EnobK5JwYGg/VzX0-XyDCCk.jpg?size=552x604&quality=96&sign=b5566da43aba9e2c9f7ef53f08f2ad32&type=album">Дистанционное зондирование</a></li>
+            <li><a href="C:\Users\ferse\OneDrive\Рабочий стол\Минкин\2.jpg">крыса</a></li>
+           
+        </ul>
+
+        <script>
+    
+            const links = document.documentElement.getElementsByTagName('a');
+
+                // Проходимся по каждой ссылке и проверяем, является ли она внешней
+                for (let i = 0; i < links.length; i++) {
+                    const link = links[i];
+                
+                // накидываем дизайна
+                if (link.href.startsWith('http://') || link.href.startsWith('https://')) {
+                    link.style.color = 'magenta';
+                    link.style.textDecoration = 'underline dotted';
+                } else {
+                    link.style.color = 'red';
+                    link.style.textDecoration = 'underline';
+                }
+                }
+        </script>
+    </body>
+</html>
